@@ -75,7 +75,7 @@ export default function AboutSection() {
             <div className="relative">
               <div className="rounded-2xl shadow-2xl w-full max-w-lg mx-auto overflow-hidden bg-gradient-to-br from-blue-50 to-purple-50 dark:from-blue-900/20 dark:to-purple-900/20">
                 <img
-                  src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/myphoto.png-6689WasjUxGzvgKlxGtQtipdwznaW6.jpeg"
+                  src="/images/myphoto.jpg"
                   alt="Abhishek Dwivedi working on projects"
                   className="w-full h-auto object-cover"
                   style={{
