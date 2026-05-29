@@ -44,6 +44,20 @@ const projects = [
     githubUrl: "https://github.com/Abhishek0290",
     featured: false,
   },
+  {
+  id: 4,
+  title: "TransitPulse+",
+  description:
+    "AI-powered mobility prototype for Bharat with smart public transport tracking, route assistance and passenger-focused transit experience.",
+  image: "/images/transitpulse.jpg",
+  tags: ["Figma", "UI/UX", "Mobile App", "Prototype"],
+  category: "mobile",
+  liveUrl:
+    "https://www.figma.com/design/sYR9gYmEvP47gIAEw2Xm0c/TransitPulse-Mobile-App-Prototype",
+  githubUrl: "https://github.com/Abhishek0290",
+  featured: true,
+  status: "Prototype",
+}
 ]
 
 const categories = [
