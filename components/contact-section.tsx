@@ -49,28 +49,49 @@ export default function ContactSection() {
   const [isSubmitting, setIsSubmitting] = useState(false)
   const { toast } = useToast()
 
-  const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
-    setFormData({
-      ...formData,
-      [e.target.name]: e.target.value,
-    })
-  }
-
   const handleSubmit = async (e: React.FormEvent) => {
-    e.preventDefault()
-    setIsSubmitting(true)
+  e.preventDefault()
+  setIsSubmitting(true)
 
-    // Simulate form submission
-    await new Promise((resolve) => setTimeout(resolve, 2000))
-
-    toast({
-      title: "Message sent!",
-      description: "Thank you for your message. I'll get back to you soon.",
+  try {
+    const response = await fetch("https://formspree.io/f/xzdwwjjo", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+        Accept: "application/json",
+      },
+      body: JSON.stringify(formData),
     })
 
-    setFormData({ name: "", email: "", subject: "", message: "" })
-    setIsSubmitting(false)
+    if (response.ok) {
+      toast({
+        title: "Message sent!",
+        description: "Thank you for your message. I'll get back to you soon.",
+      })
+
+      setFormData({
+        name: "",
+        email: "",
+        subject: "",
+        message: "",
+      })
+    } else {
+      toast({
+        title: "Failed to send message",
+        description: "Please try again later.",
+        variant: "destructive",
+      })
+    }
+  } catch (error) {
+    toast({
+      title: "Network error",
+      description: "Please check your connection and try again.",
+      variant: "destructive",
+    })
   }
+
+  setIsSubmitting(false)
+}
 
   return (
     <section id="contact" className="py-20">
