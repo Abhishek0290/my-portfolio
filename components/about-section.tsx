@@ -37,12 +37,12 @@ const interests = [
 
 export default function AboutSection() {
   const handleViewResume = () => {
-    window.open("/resume.pdf", "_blank")
+    window.open("/Abhishek_Dwivedi_Resume.pdf", "_blank")
   }
 
   const handleDownloadResume = () => {
     const link = document.createElement("a")
-    link.href = "/resume.pdf"
+    link.href = "/Abhishek_Dwivedi_Resume.pdf"
     link.download = "Abhishek_Dwivedi_Resume.pdf"
     link.click()
   }

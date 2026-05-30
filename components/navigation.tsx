@@ -30,7 +30,7 @@ export default function Navigation() {
 
   const handleDownloadResume = () => {
     const link = document.createElement("a")
-    link.href = "/resume.pdf"
+    link.href = "/Abhishek_Dwivedi_Resume.pdf"
     link.download = "Abhishek_Dwivedi_Resume.pdf"
     link.click()
   }
