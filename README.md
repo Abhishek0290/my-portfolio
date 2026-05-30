@@ -1,65 +1,106 @@
 # 🌐 Personal Portfolio
 
-A modern, responsive portfolio website built to showcase my projects, skills, experience and contact information.
+A modern, responsive portfolio website showcasing my projects, technical skills, experience and professional journey as a Full Stack Developer.
 
-Live Website:  
+🌍 **Live Website**
 https://abhishekdwivedi-portfolio.vercel.app
 
 ---
 
 ## 🚀 Features
 
-- Responsive modern UI
-- Dark and light theme support
-- Smooth animations
-- Project showcase section
-- Resume view and download
-- Working contact form
-- Open Graph preview support
-- Custom favicon
+* Modern and responsive user interface
+* Dark and light theme support
+* Smooth animations and transitions
+* Project showcase with featured work
+* Resume view and download functionality
+* Functional contact form integration
+* Open Graph and social sharing support
+* Custom favicon and branding
+* Mobile-friendly design
+
+---
+
+## 📸 Screenshots
+
+### Home Page
+
+![Home Page](assets/home.jpg)
+
+### Projects Section
+
+![Projects Section](assets/projects.jpg)
+
+### Contact Section
+
+![Contact Section](assets/contact.jpg)
 
 ---
 
 ## 🛠 Tech Stack
 
-- Next.js
-- React
-- TypeScript
-- Tailwind CSS
-- Framer Motion
-- Vercel
+### Frontend
+
+* Next.js
+* React
+* TypeScript
+* Tailwind CSS
+* Framer Motion
+
+### Deployment
+
+* Vercel
 
 ---
 
 ## 📌 Sections
 
-- Home
-- About
-- Skills
-- Projects
-- Experience
-- Contact
+* Home
+* About
+* Skills
+* Projects
+* Experience
+* Contact
+
+---
+
+## 🌟 Featured Projects
+
+### 🚍 TransitPulse
+
+AI-powered public transport platform featuring ETA prediction, crowd analytics, live tracking and sustainability insights.
+
+### 🤝 HelpingHands
+
+Community-driven donation platform focused on social impact and accessibility.
 
 ---
 
 ## 📄 Resume
 
-The portfolio includes options to view and download my resume directly from the website.
+Visitors can view and download my resume directly from the portfolio.
 
 ---
 
 ## 📬 Contact
 
-The contact form is connected and allows visitors to send messages directly.
+The portfolio includes a working contact form allowing visitors, recruiters and collaborators to get in touch directly.
 
 ---
 
 ## 👨‍💻 Author
 
-Abhishek Dwivedi
+### Abhishek Dwivedi
 
-Portfolio:  
+🌐 Portfolio
 https://abhishekdwivedi-portfolio.vercel.app
 
-LinkedIn:  
+💼 LinkedIn
 https://www.linkedin.com/in/abhishekdwivedi29/
+
+📧 Email
+[abhishekdwi455@gmail.com](mailto:abhishekdwi455@gmail.com)
+
+---
+
+⭐ Built using modern web technologies with a focus on performance, accessibility and user experience.
