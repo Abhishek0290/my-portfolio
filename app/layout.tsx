@@ -7,24 +7,29 @@ import { Toaster } from "@/components/ui/toaster"
 
 const inter = Inter({ subsets: ["latin"] })
 
+const siteUrl = "https://abhishekdwivedi-portfolio.vercel.app"
+const ogImage = `${siteUrl}/og-image.jpg`
+
 export const metadata: Metadata = {
+  metadataBase: new URL(siteUrl),
   title: "Abhishek Dwivedi - Full Stack Developer",
   description:
-    "B.Tech CSE student and Full-Stack Developer specializing in React, Node.js, and modern web technologies. Founder of HelpingHands and Pennyfy. Available for internships and projects.",
-  keywords: "full stack developer, react developer, node.js, web development, javascript, typescript, B.Tech CSE, AKTU",
+    "B.Tech CSE student and Full-Stack Developer specializing in React, Node.js, and modern web technologies. Available for internships and projects.",
+  keywords:
+    "full stack developer, react developer, node.js, web development, javascript, typescript, B.Tech CSE, AKTU",
   authors: [{ name: "Abhishek Dwivedi" }],
   creator: "Abhishek Dwivedi",
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: "https://abhishekdwivedi.dev",
+    url: siteUrl,
     title: "Abhishek Dwivedi - Full Stack Developer",
     description:
       "B.Tech CSE student and Full-Stack Developer specializing in React, Node.js, and modern web technologies.",
     siteName: "Abhishek Dwivedi Portfolio",
     images: [
       {
-        url: "/og-image.jpg",
+        url: ogImage,
         width: 1200,
         height: 630,
         alt: "Abhishek Dwivedi - Full Stack Developer",
@@ -37,7 +42,7 @@ export const metadata: Metadata = {
     description:
       "B.Tech CSE student and Full-Stack Developer specializing in React, Node.js, and modern web technologies.",
     creator: "@Abhishe15086089",
-    images: ["/og-image.jpg"],
+    images: [ogImage],
   },
   robots: {
     index: true,
@@ -50,7 +55,6 @@ export const metadata: Metadata = {
       "max-snippet": -1,
     },
   },
-    generator: 'v0.dev'
 }
 
 export default function RootLayout({
