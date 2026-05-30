@@ -12,38 +12,53 @@ const ogImage = `${siteUrl}/og-image.jpg`
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
-  title: "Abhishek Dwivedi - Full Stack Developer",
+
+  title: "Abhishek Dwivedi",
+
   description:
-    "B.Tech CSE student and Full-Stack Developer specializing in React, Node.js, and modern web technologies. Available for internships and projects.",
+    "Full Stack Developer • React • Next.js • Node.js • TypeScript",
+
   keywords:
-    "full stack developer, react developer, node.js, web development, javascript, typescript, B.Tech CSE, AKTU",
+    "full stack developer, react developer, next.js developer, node.js developer, typescript, javascript, web development",
+
   authors: [{ name: "Abhishek Dwivedi" }],
   creator: "Abhishek Dwivedi",
+
   openGraph: {
     type: "website",
     locale: "en_US",
     url: siteUrl,
-    title: "Abhishek Dwivedi - Full Stack Developer",
+
+    title: "Abhishek Dwivedi",
+
     description:
-      "B.Tech CSE student and Full-Stack Developer specializing in React, Node.js, and modern web technologies.",
+      "Full Stack Developer • React • Next.js • Node.js • TypeScript",
+
     siteName: "Abhishek Dwivedi Portfolio",
+
     images: [
       {
         url: ogImage,
         width: 1200,
         height: 630,
-        alt: "Abhishek Dwivedi - Full Stack Developer",
+        alt: "Abhishek Dwivedi",
       },
     ],
   },
+
   twitter: {
     card: "summary_large_image",
-    title: "Abhishek Dwivedi - Full Stack Developer",
+
+    title: "Abhishek Dwivedi",
+
     description:
-      "B.Tech CSE student and Full-Stack Developer specializing in React, Node.js, and modern web technologies.",
+      "Full Stack Developer • React • Next.js • Node.js • TypeScript",
+
     creator: "@Abhishe15086089",
+
     images: [ogImage],
   },
+
   robots: {
     index: true,
     follow: true,
@@ -65,7 +80,12 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <body className={inter.className}>
-        <ThemeProvider attribute="class" defaultTheme="system" enableSystem disableTransitionOnChange>
+        <ThemeProvider
+          attribute="class"
+          defaultTheme="system"
+          enableSystem
+          disableTransitionOnChange
+        >
           {children}
           <Toaster />
         </ThemeProvider>
